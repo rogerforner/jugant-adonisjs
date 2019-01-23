@@ -17,6 +17,16 @@ Fullstack boilerplate de AdonisJs, éste viene pre-configurado con:
 git clone https://github.com/rogerforner/tinker-adonisAuth.git adonisAuth
 ```
 
+## Servidor HTTP
+
+Ejecutar el servidor HTTP de desarrollo.
+
+```bash
+adonis serve --dev
+```
+
+> Si npm nos devuelve errores a la hora de instalar paquetes podría ser porqué se está ejecutando el servidor HTTP.
+
 ## Configuración
 
 ### Proveedor de emails
@@ -35,7 +45,9 @@ const providers = [
 ]
 ```
 
-Insertamos los datos para la configuración de nuestro proveedor, archivo _.env_. En nuestro caso utilizamos Mailtrap.
+Insertamos los datos de configuración en del archivo _.env_.
+
+> En nuestro caso utilizamos Mailtrap.
 
 ```bash
 SMTP_HOST=smtp.mailtrap.io
@@ -60,4 +72,25 @@ smtp: {
   maxMessages: 100,
   rateLimit: 10
 },
+```
+
+### Base de Datos
+
+Instalamos el paquete mysql a través de npm.
+
+```bash
+npm i mysql --save
+```
+
+Insertamos los datos de configuración en del archivo _.env_.
+
+> En nuestro caso utilizaremos mysql.
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=****
+DB_DATABASE=adonisauth
 ```
