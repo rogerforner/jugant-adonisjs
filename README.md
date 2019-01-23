@@ -31,6 +31,8 @@ adonis serve --dev
 
 ### Proveedor de emails
 
+> [Documentación oficial](https://adonisjs.com/docs/4.1/mail)
+
 Instalar el proveedor de emails.
 
 ```bash
@@ -47,7 +49,7 @@ const providers = [
 
 Insertamos los datos de configuración en del archivo _.env_.
 
-> En nuestro caso utilizamos Mailtrap.
+_En nuestro caso utilizamos Mailtrap._
 
 ```bash
 SMTP_HOST=smtp.mailtrap.io
@@ -76,6 +78,8 @@ smtp: {
 
 ### Base de Datos
 
+> [Documentación oficial](https://adonisjs.com/docs/4.1/database)
+
 Instalamos el paquete mysql a través de npm.
 
 ```bash
@@ -84,7 +88,7 @@ npm i mysql --save
 
 Insertamos los datos de configuración en del archivo _.env_.
 
-> En nuestro caso utilizaremos mysql.
+_En nuestro caso utilizaremos mysql._
 
 ```bash
 DB_CONNECTION=mysql
