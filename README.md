@@ -114,3 +114,12 @@ Generamos las tablas en la base de datos con adonis.
 ```bash
 adonis migration:run
 ```
+
+## Rutas
+
+Creamos las rutas necesarias en `start/routes.js`.
+
+```js
+Route.get('register', 'Auth/RegisterController.showRegisterForm')
+Route.post('register', 'Auth/RegisterController.register').as('register')
+```
