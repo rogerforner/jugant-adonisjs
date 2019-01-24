@@ -106,3 +106,11 @@ Creamos un modelo PasswordReset con la línea de comandos adonis.
 ```bash
 adonis make:model PasswordReset -m
 ```
+
+## Migraciones
+
+Generamos las tablas en la base de datos con adonis.
+
+```bash
+adonis migration:run
+```
