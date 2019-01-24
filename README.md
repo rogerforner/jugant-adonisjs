@@ -98,3 +98,11 @@ DB_USER=root
 DB_PASSWORD=****
 DB_DATABASE=adonisauth
 ```
+
+## Creación de Modelos
+
+Creamos un modelo PasswordReset con la línea de comandos adonis.
+
+```bash
+adonis make:model PasswordReset -m
+```
