@@ -123,3 +123,9 @@ Creamos las rutas necesarias en `start/routes.js`.
 Route.get('register', 'Auth/RegisterController.showRegisterForm')
 Route.post('register', 'Auth/RegisterController.register').as('register')
 ```
+
+## Controladores
+
+```bash
+adonis make:controller Auth/RegisterController --type=http
+```
