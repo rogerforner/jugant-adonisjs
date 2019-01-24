@@ -1,0 +1,20 @@
+@layout('layout.app')
+
+@section('content')
+  <h2>Register</h2>
+
+  <form action="{{ route('register') }}" method="post">
+    {{ csrfField() }}
+
+    Username: <input type="text" name="username" class="{{ hasErrorFor('username') ? 'error' : '' }}" value="{{ old('username', '') }}"><br>
+    {{ elIf('<small><em>$self</em></small>', getErrorFor('username'), hasErrorFor('username')) }}
+    <hr>
+    Email: <input type="email" name="email" class="{{ hasErrorFor('email') ? 'error' : '' }}" value="{{ old('email', '') }}"><br>
+    {{ elIf('<small><em>$self</em></small>', getErrorFor('email'), hasErrorFor('email')) }}
+    <hr>
+    Paswword: <input type="password" name="password" class="{{ hasErrorFor('password') ? 'error' : '' }}" value="{{ old('password', '') }}"><br>
+    {{ elIf('<small><em>$self</em></small>', getErrorFor('password'), hasErrorFor('password')) }}
+
+    <button type="submit">Register</button>
+  </form>
+@endsection
