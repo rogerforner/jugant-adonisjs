@@ -129,3 +129,27 @@ Route.post('register', 'Auth/RegisterController.register').as('register')
 ```bash
 adonis make:controller Auth/RegisterController --type=http
 ```
+
+### Validación de formularios
+
+Instalamos el paquete "Validator" para poder efectuar la validación de los inputs.
+
+```bash
+adonis install @adonisjs/validator
+```
+
+También insertamos el proveedor.
+
+```js
+const providers = [
+  '@adonisjs/validator/providers/ValidatorProvider'
+]
+```
+
+### Randoms
+
+Creamos un token aleatorio. Instalaremos el paquete npm para poder generarlo aleatoreamente.
+
+```bash
+npm i random-string --save
+```
